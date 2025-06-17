@@ -374,26 +374,6 @@ export default function Home() {
     document.title = pageTitle;
   }, [pageTitle]);
 
-  if (loading) {
-    return (
-      <div className="d-flex justify-content-center align-items-center" style={{ height: "100vh" }}>
-        <div className="spinner-border text-primary" role="status">
-          <span className="visually-hidden">Yükleniyor...</span>
-        </div>
-      </div>
-    );
-  }
-
-  if (!data) {
-    return (
-      <div className="d-flex justify-content-center align-items-center" style={{ height: "100vh" }}>
-        <div className="alert alert-danger" role="alert">
-          Veriler yüklenemedi. Lütfen sayfayı yenileyin.
-        </div>
-      </div>
-    );
-  }
-
   return (
     <>
       <Head>
