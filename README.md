@@ -1,68 +1,78 @@
-# Mustafa Erçin Portfolio
+# Modern Portfolio Website
 
-Modern ve profesyonel bir kişisel web sitesi, Next.js ve Tailwind CSS kullanılarak geliştirilmiştir.
+Modern ve profesyonel bir kişisel web sitesi projesi. Next.js ve Tailwind CSS kullanılarak geliştirilmiş, yüksek performanslı ve SEO dostu bir web uygulaması.
 
-## Özellikler
+## Proje Özellikleri
 
-- 🎨 Modern ve profesyonel tasarım
-- 📱 Tamamen responsive tasarım
-- ⚡ Akıcı animasyonlar ve geçişler
-- 🎯 Temiz ve sezgisel kullanıcı arayüzü
+- 🎨 Modern ve minimalist tasarım
+- 📱 Responsive ve mobil uyumlu arayüz
+- ⚡ Next.js ile yüksek performans
+- 🎯 TypeScript ile tip güvenliği
 - 🔍 SEO optimizasyonu
-- 🚀 Yüksek performans
+- 🚀 Statik site üretimi (SSG)
+- 🌙 Karanlık/Aydınlık tema desteği
+- 📊 Analytics entegrasyonu
 
 ## Teknoloji Yığını
 
-- Next.js 15
-- TypeScript
-- Tailwind CSS
-- Framer Motion
-- Hero Icons
-- React Bootstrap
+- **Frontend Framework:** Next.js 15
+- **Programlama Dili:** TypeScript
+- **Stil:** Tailwind CSS
+- **UI Bileşenleri:** React Bootstrap
+- **Animasyonlar:** Framer Motion
+- **İkonlar:** Hero Icons
+- **Form Yönetimi:** React Hook Form
+- **Validasyon:** Zod
 
-## Başlangıç
+## Proje Yapısı
 
-Repository'yi klonlayın:
-```bash
-git clone https://github.com/erchin33/mustafaercin.github.io.git
+```
+src/
+├── app/                 # Next.js 13+ App Router
+├── components/          # Yeniden kullanılabilir bileşenler
+├── hooks/              # Custom React hooks
+├── styles/             # Global stiller
+└── types/              # TypeScript tip tanımlamaları
 ```
 
-Bağımlılıkları yükleyin:
+## Geliştirme
+
+Projeyi yerel ortamınızda çalıştırmak için:
+
 ```bash
+# Bağımlılıkları yükleyin
 npm install
-```
 
-Geliştirme sunucusunu başlatın:
-```bash
+# Geliştirme sunucusunu başlatın
 npm run dev
 ```
 
-Tarayıcınızda http://localhost:3001 adresini açarak sonucu görebilirsiniz.
-
-## Özelleştirme
-
-- `public` dizinindeki profil fotoğrafını değiştirin
-- `src/app/admin/page.tsx` dosyasındaki kişisel bilgileri güncelleyin
-- `src/components` dizinindeki bileşenleri özelleştirin
-- `tailwind.config.js` dosyasından renk şemasını değiştirin
-
-## Deployment
-
-Bu site GitHub Pages üzerinde yayınlanmaktadır. Yeni değişiklikler için:
+## Build ve Deployment
 
 ```bash
+# Production build
 npm run build
-git add .
-git commit -m "Your commit message"
-git push origin main
+
+# Statik dosyaları oluştur
+npm run export
 ```
 
-## İletişim
+## Performans Optimizasyonları
 
-- E-posta: mustafaercin3334@gmail.com
-- LinkedIn: [linkedin.com/in/mustafa-ercin](https://linkedin.com/in/mustafa-ercin)
-- GitHub: [github.com/erchin33](https://github.com/erchin33)
+- Image optimization
+- Code splitting
+- Lazy loading
+- Static generation
+- Caching strategies
+
+## Katkıda Bulunma
+
+1. Fork'layın
+2. Feature branch oluşturun (`git checkout -b feature/amazing-feature`)
+3. Değişikliklerinizi commit edin (`git commit -m 'feat: Add amazing feature'`)
+4. Branch'inizi push edin (`git push origin feature/amazing-feature`)
+5. Pull Request oluşturun
 
 ## Lisans
 
-MIT Lisansı - bu şablonu kendi portfolyonuz için kullanmaktan çekinmeyin!
+MIT Lisansı altında lisanslanmıştır. Detaylar için [LICENSE](LICENSE) dosyasına bakın.

@@ -4,7 +4,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: '/mustafaercin.github.io',
+  basePath: '',
   eslint: {
     ignoreDuringBuilds: true,
   },
