@@ -159,10 +159,10 @@ export default function AdminPanel() {
 
   // UI states
   const [contactInfo, setContactInfo] = useState({
-    email: "mustafaercin@gmail.com",
+    email: "berkanhalit@gmail.com",
     phone: "+905340180861",
-    linkedin: "https://linkedin.com/in/mustafa-ercin",
-    github: "https://github.com/erchin33"
+    linkedin: "https://linkedin.com/in/berkanhalit",
+    github: "https://github.com/berkanhalit"
   });
   const [profileImage, setProfileImage] = useState("/me.jpeg");
   const [scrollIndicator, setScrollIndicator] = useState({
@@ -223,7 +223,7 @@ export default function AdminPanel() {
     {
       id: '1',
       name: 'GitHub',
-      url: 'https://github.com/mustafaercin',
+      url: 'https://github.com/berkanhalit',
       icon: 'FaGithub',
       order: 1,
       isActive: true
@@ -231,7 +231,7 @@ export default function AdminPanel() {
     {
       id: '2',
       name: 'LinkedIn',
-      url: 'https://linkedin.com/in/mustafaercin',
+      url: 'https://linkedin.com/in/berkanhalit',
       icon: 'FaLinkedin',
       order: 2,
       isActive: true
