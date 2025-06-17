@@ -11,7 +11,7 @@ const Navigation = () => {
   const [activeSection, setActiveSection] = useState("");
   const [scrolled, setScrolled] = useState(false);
   const [logoData, setLogoData] = useState({
-    text: "BH",
+    text: "Portfolio",
     colors: {
       start: "#007bff",
       end: "#00ff88"
@@ -58,20 +58,6 @@ const Navigation = () => {
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  useEffect(() => {
-    const savedData = localStorage.getItem('portfolioData');
-    if (savedData) {
-      const data = JSON.parse(savedData);
-      setLogoData({
-        text: data.logoText || "BH",
-        colors: data.logoColors || {
-          start: "#007bff",
-          end: "#00ff88"
-        }
-      });
-    }
   }, []);
 
   return (
