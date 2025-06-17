@@ -69,7 +69,40 @@ const VideoModal = ({ videoUrl, onClose }: { videoUrl: string; onClose: () => vo
 export default function Home() {
   const [data, setData] = useState<any>(null);
   const [loading, setLoading] = useState(true);
-  const [buttons, setButtons] = useState<Button[]>([]);
+  const [buttons, setButtons] = useState<Button[]>([
+    {
+      id: '1',
+      name: 'GitHub',
+      url: 'https://github.com/erchin33',
+      icon: 'FaGithub',
+      order: 1,
+      isActive: true
+    },
+    {
+      id: '2',
+      name: 'LinkedIn',
+      url: 'https://linkedin.com/in/mustafa-ercin',
+      icon: 'FaLinkedin',
+      order: 2,
+      isActive: true
+    },
+    {
+      id: '3',
+      name: 'ArtStation',
+      url: 'https://www.artstation.com/erchin',
+      icon: 'SiArtstation',
+      order: 3,
+      isActive: true
+    },
+    {
+      id: '4',
+      name: 'Drive',
+      url: 'https://drive.google.com/drive/folders/1fYuX47ne7m4R2-AkNs95qU-BDXLaWQaR?usp=drive_link',
+      icon: 'FaGlobe',
+      order: 4,
+      isActive: true
+    }
+  ]);
   const [heroText, setHeroText] = useState({
     name: "Mustafa Erçin",
     titles: ["Product Specialist", "Level Designer"]
