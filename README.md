@@ -1,54 +1,68 @@
-# Game Designer Portfolio
+# Mustafa Erçin Portfolio
 
-A modern, responsive portfolio website built with Next.js and Tailwind CSS, designed specifically for game designers to showcase their work.
+Modern ve profesyonel bir kişisel web sitesi, Next.js ve Tailwind CSS kullanılarak geliştirilmiştir.
 
-## Features
+## Özellikler
 
-- 🎮 Modern and professional design
-- 📱 Fully responsive layout
-- ⚡ Smooth animations and transitions
-- 🎨 Clean and intuitive UI/UX
-- 🔍 SEO optimized
-- 🚀 Fast performance
+- 🎨 Modern ve profesyonel tasarım
+- 📱 Tamamen responsive tasarım
+- ⚡ Akıcı animasyonlar ve geçişler
+- 🎯 Temiz ve sezgisel kullanıcı arayüzü
+- 🔍 SEO optimizasyonu
+- 🚀 Yüksek performans
 
-## Tech Stack
+## Teknoloji Yığını
 
-- Next.js 14
+- Next.js 15
 - TypeScript
 - Tailwind CSS
 - Framer Motion
 - Hero Icons
+- React Bootstrap
 
-## Getting Started
+## Başlangıç
 
-1. Clone the repository:
+Repository'yi klonlayın:
 ```bash
-git clone <repository-url>
+git clone https://github.com/erchin33/mustafaercin.github.io.git
 ```
 
-2. Install dependencies:
+Bağımlılıkları yükleyin:
 ```bash
 npm install
 ```
 
-3. Run the development server:
+Geliştirme sunucusunu başlatın:
 ```bash
 npm run dev
 ```
 
-4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Tarayıcınızda http://localhost:3001 adresini açarak sonucu görebilirsiniz.
 
-## Customization
+## Özelleştirme
 
-1. Replace the hero background image in the `public` directory
-2. Update the project cards in `src/app/page.tsx`
-3. Modify the skills and about section content
-4. Customize the color scheme in `tailwind.config.js`
+- `public` dizinindeki profil fotoğrafını değiştirin
+- `src/app/admin/page.tsx` dosyasındaki kişisel bilgileri güncelleyin
+- `src/components` dizinindeki bileşenleri özelleştirin
+- `tailwind.config.js` dosyasından renk şemasını değiştirin
 
 ## Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new).
+Bu site GitHub Pages üzerinde yayınlanmaktadır. Yeni değişiklikler için:
 
-## License
+```bash
+npm run build
+git add .
+git commit -m "Your commit message"
+git push origin main
+```
 
-MIT License - feel free to use this template for your own portfolio!
+## İletişim
+
+- E-posta: mustafaercin3334@gmail.com
+- LinkedIn: [linkedin.com/in/mustafa-ercin](https://linkedin.com/in/mustafa-ercin)
+- GitHub: [github.com/erchin33](https://github.com/erchin33)
+
+## Lisans
+
+MIT Lisansı - bu şablonu kendi portfolyonuz için kullanmaktan çekinmeyin!
