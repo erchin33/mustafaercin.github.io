@@ -14,17 +14,16 @@ interface Education {
 }
 
 export default function Education() {
-  const [education, setEducation] = useState<Education[]>([]);
-
-  useEffect(() => {
-    const savedData = localStorage.getItem('portfolioData');
-    if (savedData) {
-      const data = JSON.parse(savedData);
-      if (data.education) {
-        setEducation(data.education);
-      }
+  const [education, setEducation] = useState<Education[]>([
+    {
+      school: "Anadolu University",
+      degree: "Bachelor's",
+      field: "Game Design",
+      duration: "2016 - 2020",
+      location: "Eskişehir, Turkey",
+      description: "Graduated with honors, focusing on game mechanics, level design, and user experience."
     }
-  }, []);
+  ]);
 
   if (education.length === 0) return null;
 

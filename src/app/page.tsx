@@ -72,23 +72,174 @@ export default function Home() {
   const [buttons, setButtons] = useState<Button[]>([]);
   const [heroText, setHeroText] = useState({
     name: "Mustafa Erçin",
-    titles: ["Game Designer", "Level Designer"]
+    titles: ["Product Specialist", "Level Designer"]
   });
-  const [pageTitle, setPageTitle] = useState("Mustafa Erçin - Game & Level Designer");
+  const [pageTitle, setPageTitle] = useState("Mustafa Erçin - Product Specialist & Level Designer");
   const [copyrightText, setCopyrightText] = useState("© 2025 Mustafa Erçin. All rights reserved.");
   const [aboutText, setAboutText] = useState({
-    paragraph1: "I graduated with a degree in Game Design, with a strong foundation in game mechanics, user experience, and creative game development. I possess experience in analyzing KPIs and conducting market research to inform game development.",
-    paragraph2: "As a quick learner and dedicated team player, I am eager to apply my skills to contribute innovative ideas and collaborate within a dynamic team. Committed to continuous growth in the game design field, I am passionate about creating engaging and immersive gaming experiences. While my expertise spans various areas, my primary focus has been in level design, where I have developed a strong ability to craft engaging, balanced, and immersive game levels."
+    paragraph1: "I am a passionate and multidisciplinary Game Designer with a background in both creative and technical aspects of development. With a degree in Digital Game Design and hands-on experience in Level Design, QA testing, and user-focused design, I thrive in environments that require both innovation and precision.",
+    paragraph2: "I have contributed to projects ranging from VR military training simulations to mobile and PC puzzle games, always with a focus on creating meaningful player experiences. My work often bridges the gap between gameplay mechanics, user behavior, and technical feasibility. Whether I am designing levels, improving UX, conducting market research, or guiding product development, I approach each challenge with curiosity and a solution-oriented mindset.\n\nI believe in the power of collaboration and continuous learning, and I'm always excited to turn creative ideas into real, impactful products."
   });
-  const [projects, setProjects] = useState<Project[]>([]);
-  const [skills, setSkills] = useState<Skill[]>([]);
+  const [projects, setProjects] = useState([
+    {
+      id: "1",
+      title: "Slide Cubes",
+      description: "Slide Cubes is a mobile puzzle game developed in portrait mode, where players must guide a round character to a target point within a limited time. With each move, the character advances only one tile in the chosen direction, requiring quick thinking and strategic planning. I was responsible for the core gameplay mechanics, level design, and puzzle progression. In addition to designing the game, I managed a small development team, ensuring smooth collaboration and steady progress. This project highlights my ability to craft engaging gameplay experiences while effectively leading a game development process.",
+      image: "https://media.licdn.com/dms/image/v2/D4D2DAQEOeY_HbeBfzQ/profile-treasury-image-shrink_8192_8192/B4DZbZMYmfIAAg-/0/1747400624942?e=1750773600&v=beta&t=Qaq6wI0mKj-N00C3u8q2FJOUQJtzP7CwZVRY6kuJKAc",
+      video: "https://www.youtube.com/embed/ro33kIcsh8g",
+      tags: ["Project Management", "Unity", "QA", "Figma", "Game Design"],
+      github: "",
+      demo: ""
+    },
+    {
+      id: "2",
+      title: "Inter Island",
+      description: "Inter Island is a PC game where players take on the role of a merchant navigating between islands with diverse climates to trade resources and goods. As the Project Manager, I oversaw the development process from concept to completion, taking responsibility for game design, environment design, level design, and UI design. Each island was crafted to offer a distinct and immersive atmosphere, influencing both gameplay and trade dynamics. I coordinated cross-functional teams, managed resources, and ensured the on-time delivery of polished gameplay systems. The game features a dynamic trading system, strategic resource management, and an intuitive user interface that enhances the player's experience while traveling across richly detailed environments. This project reflects my ability to lead a multidisciplinary team and deliver a cohesive and engaging gameplay experience.",
+      image: "https://media.licdn.com/dms/image/v2/D4D2DAQGyaJJGMJctdw/profile-treasury-image-shrink_800_800/B4DZd.C0.hGkAY-/0/1750166360722?e=1750773600&v=beta&t=Ufl8CNoSTlT7rBysglMaPdBLQYAG9gSTmsv2h8En2Lk",
+      video: "https://www.youtube.com/embed/N30n2XWf5JQ",
+      tags: ["Project Management", "UI", "Unity", "QA", "Figma", "Game Design", "Level Design"],
+      github: "",
+      demo: ""
+    },
+    {
+      id: "3",
+      title: "TacticXR",
+      description: "TacticXR is a virtual reality tactical training simulation developed for military personnel. In this project, I contributed to the design of large-scale training environments and mission-based scenarios, while also implementing localization systems and real-time multi-personnel monitoring panels. I conducted user training sessions to ensure an interactive and effective learning experience tailored to operational needs. Additionally, I managed research and development activities, gathered and integrated customer requirements, and oversaw testing and bug-fixing processes to maintain high performance and reliability. This project reflects my ability to combine technical execution with user-centered design in a complex, real-time VR environment.",
+      image: "https://www.adtairdefence.com/foto/1733395313-DSC_2280-Enhanced.png",
+      video: "https://www.youtube.com/embed/nAqCyLrWEAw",
+      tags: ["Unity", "QA", "Figma", "Simulation", "Level Design", "VR", "UI"],
+      github: "",
+      demo: ""
+    },
+    {
+      id: "4",
+      title: "PizzaPit",
+      description: "PizzaPit is a fast-paced cooking simulation game where players step into the role of a pizza chef, crafting customized pizzas based on incoming customer orders. As players race against time, they must manage ingredients, respond to dynamic requests, and ensure each pizza is prepared and baked to perfection. I was responsible for 3D modeling, level design, and gameplay mechanics. My work focused on building an immersive pizza preparation experience with intuitive and engaging customer interactions, as well as designing levels that balance time management, strategic thinking, and fun. This project highlights my ability to combine creative gameplay design with strong visual and interactive elements to deliver a satisfying user experience.",
+      image: "https://img.freepik.com/free-psd/3d-rendering-delicious-pizza-slice_23-2149108555.jpg?semt=ais_hybrid&w=740",
+      video: "",
+      tags: ["Unity", "QA", "Level Design", "UI"],
+      github: "",
+      demo: "https://drive.google.com/drive/folders/1JgFQpuURDyQhfM7JCYVxfYDkMigEtQuR?usp=drive_link"
+    },
+    {
+      id: "5",
+      title: "Reverbs2Mind",
+      description: "The game follows a protagonist who awakens from a vivid dream and is drawn into a surreal journey guided by a mysterious voice. Upon following the voice's instructions and interacting with a computer, the character is transported into a digital world where they must locate and dispose of a specific outfit. As the narrative unfolds, players navigate through a series of challenges that blur the line between dreams and reality. I was responsible for the UI/UX design, gameplay development, and level design. My work focused on crafting a seamless and immersive interface, implementing core mechanics, and designing levels that offer both narrative depth and intellectual challenge. This project showcases my ability to blend storytelling with interactive design, creating an engaging experience that evolves as the player progresses.",
+      image: "https://img.itch.zone/aW1hZ2UvMTg1MTMzMC8xMDg2NzQyOC5wbmc=/original/VwPGYh.png",
+      video: "",
+      tags: ["Unity", "Game Design", "Design", "UI"],
+      github: "",
+      demo: "https://erchin.itch.io/reverb2mind"
+    },
+    {
+      id: "6",
+      title: "WTF!? : The Room",
+      description: "This game offers players a thought-provoking journey filled with complex puzzles and evolving challenges. In each room, players must find a way forward by utilizing a special power—one that they cannot fully control. When approached strategically, this power becomes the key to success. The experience requires a balance of intelligence and strategy, pushing players to think critically and adapt constantly. I was responsible for level design, game mechanics, and UI design. Every aspect of the game was carefully crafted to provide an immersive, mentally engaging experience that rewards thoughtful gameplay and encourages players to develop new problem-solving approaches.",
+      image: "https://img.itch.zone/aW1hZ2UvMjcxODkzMi8xNjIxMDg3OS5wbmc=/original/UGTLLW.png",
+      video: "https://www.youtube.com/embed/Oi19WSrIGD4",
+      tags: ["Unity", "Game Design", "Design", "UI"],
+      github: "",
+      demo: "https://emirozger.itch.io/wtf-the-room"
+    },
+    {
+      id: "7",
+      title: "Kitchen Chaos (clone)",
+      description: "A clone of the fast-paced cooking game Kitchen Chaos, developed to practice time-sensitive task management, player input handling, and kitchen station interactions. I implemented core gameplay systems such as recipe logic, order timers, and UI feedback to simulate an engaging kitchen experience.",
+      image: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2275820/ss_872ca7604865c2303adef48a1ef0ea176b12c2a5.1920x1080.jpg?t=1725190944",
+      video: "https://www.youtube.com/embed/gc5mdfBXcCA",
+      tags: ["Unity", "Game Design", "Design", "UI", "C#"],
+      github: "",
+      demo: ""
+    },
+    {
+      id: "8",
+      title: "ZigZag (clone)",
+      description: "A clone of the popular endless arcade game ZigZag, created to strengthen my skills in mobile-friendly input systems, procedural level generation, and score tracking. This project allowed me to explore smooth character movement along dynamic paths and responsive gameplay loops.",
+      image: "https://play-lh.googleusercontent.com/6pyha8P40IH8Yn7ets-yr-sDmze-lif7Lh80ZMffdBojvhAtGTk88zHru3UHeipNhA",
+      video: "https://www.youtube.com/embed/nGj_PXC3bgw",
+      tags: ["Unity", "Game Design", "Design", "UI", "C#"],
+      github: "",
+      demo: ""
+    },
+    {
+      id: "9",
+      title: "Ship Park Master",
+      description: "A puzzle game where players draw paths to park ships safely at their correct colored spots without collisions. I designed the gameplay and created levels with increasing difficulty that emphasize strategy and timing.",
+      image: "https://i.hizliresim.com/opuubqh.png",
+      video: "https://www.youtube.com/embed/7ps5wZ8ohys",
+      tags: ["Unity", "Game Design", "Design", "UI", "Level Design"],
+      github: "",
+      demo: ""
+    }
+  ]);
+  const [skills, setSkills] = useState([
+    { name: "Unity", percentage: 90, color: "#6366f1", order: 1, isActive: true },
+    { name: "C#", percentage: 85, color: "#818cf8", order: 2, isActive: true },
+    { name: "Trello", percentage: 80, color: "#0079bf", order: 3, isActive: true },
+    { name: "Miro", percentage: 80, color: "#ffd02f", order: 4, isActive: true },
+    { name: "QA", percentage: 85, color: "#0f172a", order: 5, isActive: true },
+    { name: "Figma", percentage: 80, color: "#a259ff", order: 6, isActive: true },
+    { name: "Photoshop", percentage: 75, color: "#31a8ff", order: 7, isActive: true },
+    { name: "Project Management", percentage: 85, color: "#6366f1", order: 8, isActive: true },
+    { name: "Agile", percentage: 80, color: "#0f172a", order: 9, isActive: true },
+    { name: "Game Design", percentage: 90, color: "#6366f1", order: 10, isActive: true },
+    { name: "Level Design", percentage: 95, color: "#0f172a", order: 11, isActive: true }
+  ]);
+  const [workExperience, setWorkExperience] = useState([
+    {
+      company: "ADT Aviation and Defense Technologies",
+      position: "Unity Developer / Product Specialist",
+      duration: "Sep 2024 – May 2025",
+      description: "● Created gamified VR training simulations focusing on UX and user interaction. \n● Designed UI/UX and led localization for multi-language support. \n● Designed and iterated puzzle mechanics using player feedback and analytics.  \n● Performed QA testing, resolving bugs for stable, user-ready releases.",
+      location: "Istanbul"
+    },
+    {
+      company: "OGEM – Boem Games",
+      position: "Co-Founder & Project Manager",
+      duration: "Feb 2024 – Aug 2024",
+      description: "● Led the development of Unity-based hyper-casual and casual mobile game prototypes. \n● Designed and iterated puzzle mechanics with a focus on player engagement and retention. \n● Conducted A/B tests and gameplay tuning to improve LTV and session duration. \n● Managed agile sprints, ensuring milestone deliveries with a small multidisciplinary team.",
+      location: "Istanbul"
+    },
+    {
+      company: "SkyBlue Games",
+      position: "Game Designer Intern",
+      duration: "May 2022 - Jan 2023",
+      description: "● Assisted in GDD creation and prototyping for hyper-casual games. \n● Conducted QA testing to improve player engagement and retention.",
+      location: "Remote"
+    },
+    {
+      company: "Istanbul Aydin University",
+      position: "Game Designer Intern",
+      duration: "",
+      description: "Worked on student game projects using Unity, C#, and Figma. Focused on gameplay mechanics, UI mockups, and collaborative development with cross-functional teams.",
+      location: "Istanbul"
+    }
+  ]);
+  const [education, setEducation] = useState([
+    {
+      school: "Istanbul Aydin University",
+      degree: "Bachelor's Degree",
+      field: "Digital Game Design",
+      duration: "2020 – 2024",
+      location: "Istanbul",
+      description: ""
+    },
+    {
+      school: "Istanbul University",
+      degree: "Associate's Degree",
+      field: "Graphic Design",
+      duration: "2024 – Present",
+      location: "Remote",
+      description: ""
+    }
+  ]);
   const [contactInfo, setContactInfo] = useState({
     email: "mustafaercin@gmail.com",
-    phone: "+905340180861",
-    linkedin: "https://linkedin.com/in/mustafaercin",
-    github: "https://github.com/mustafaercin"
+    phone: "+905434132393",
+    linkedin: "https://linkedin.com/in/mustafa-ercin",
+    github: "https://github.com/erchin33"
   });
-  const [profileImage, setProfileImage] = useState("/me.jpeg");
+  const [profileImage, setProfileImage] = useState("https://media.licdn.com/dms/image/v2/D4D03AQHaqYnZioUejg/profile-displayphoto-shrink_800_800/B4DZb0vNgjGwAg-/0/1747862739893?e=1753920000&v=beta&t=eoha5VFiokuW0UmMDcoesx9t_CfSNoZPskAVertBLF8");
   const [scrollIndicator, setScrollIndicator] = useState({
     enabled: true,
     color: "#007bff",
@@ -111,6 +262,8 @@ export default function Home() {
   const [titleTypingComplete, setTitleTypingComplete] = useState(false);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const [selectedVideo, setSelectedVideo] = useState<string | null>(null);
+  const [logoText, setLogoText] = useState("Portfolio");
+  const [logoColors, setLogoColors] = useState({ start: "#6366f1", end: "#818cf8" });
 
   // Icon mapping
   const iconMap: { [key: string]: any } = {
@@ -132,48 +285,6 @@ export default function Home() {
     SiArtstation,
     FaPlay
   };
-
-  // Veri yükleme fonksiyonu
-  const fetchData = async () => {
-    try {
-      const response = await fetch('/data.json');
-      if (!response.ok) {
-        throw new Error('Veri yüklenemedi');
-      }
-      const jsonData = await response.json();
-      setData(jsonData);
-      
-      // State'leri güncelle
-      setHeroText(jsonData.heroText || { name: "", titles: [] });
-      setPageTitle(jsonData.pageTitle || "");
-      setCopyrightText(jsonData.copyrightText || "");
-      setAboutText(jsonData.aboutText || { paragraph1: "", paragraph2: "" });
-      setProjects(jsonData.projects || []);
-      setSkills(jsonData.skills || []);
-      setContactInfo(jsonData.contactInfo || {});
-      setProfileImage(jsonData.profileImage || "");
-      setColorPalette(jsonData.colorPalette || {});
-      setButtons(jsonData.buttons || []);
-    } catch (error) {
-      console.error('Veri yükleme hatası:', error);
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  useEffect(() => {
-    fetchData();
-  }, []);
-
-  // Update CSS variables when color palette changes
-  useEffect(() => {
-    document.documentElement.style.setProperty('--bs-primary', colorPalette.primary);
-    document.documentElement.style.setProperty('--bs-primary-rgb', hexToRgb(colorPalette.primary));
-    document.documentElement.style.setProperty('--bs-dark', colorPalette.dark);
-    document.documentElement.style.setProperty('--bs-dark-rgb', hexToRgb(colorPalette.dark));
-    document.documentElement.style.setProperty('--bs-light', colorPalette.light);
-    document.documentElement.style.setProperty('--bs-light-rgb', hexToRgb(colorPalette.light));
-  }, [colorPalette]);
 
   // Typewriter effect
   useEffect(() => {

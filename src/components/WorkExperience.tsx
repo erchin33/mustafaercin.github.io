@@ -13,17 +13,22 @@ interface WorkExperience {
 }
 
 export default function WorkExperience() {
-  const [experiences, setExperiences] = useState<WorkExperience[]>([]);
-
-  useEffect(() => {
-    const savedData = localStorage.getItem('portfolioData');
-    if (savedData) {
-      const data = JSON.parse(savedData);
-      if (data.workExperience) {
-        setExperiences(data.workExperience);
-      }
+  const [experiences, setExperiences] = useState<WorkExperience[]>([
+    {
+      company: "Game Studio X",
+      position: "Level Designer",
+      duration: "2022 - Present",
+      description: "Designed and implemented engaging levels for multiple game projects. Collaborated with artists and programmers to deliver high-quality gameplay.",
+      location: "Istanbul, Turkey"
+    },
+    {
+      company: "Indie Dev Team",
+      position: "Game Designer",
+      duration: "2020 - 2022",
+      description: "Worked on game mechanics, user experience, and prototyping for indie games. Led playtesting sessions and iterated on feedback.",
+      location: "Remote"
     }
-  }, []);
+  ]);
 
   if (experiences.length === 0) return null;
 
