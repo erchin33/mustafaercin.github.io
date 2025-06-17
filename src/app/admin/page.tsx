@@ -133,6 +133,43 @@ const AdminCard = ({
   );
 };
 
+// JSON dosyasından veri okuma fonksiyonu
+const fetchData = async () => {
+  try {
+    const response = await fetch('/data.json');
+    if (!response.ok) {
+      throw new Error('Veri yüklenemedi');
+    }
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error('Veri yükleme hatası:', error);
+    return null;
+  }
+};
+
+// JSON dosyasına veri kaydetme fonksiyonu
+const saveData = async (data: any) => {
+  try {
+    const response = await fetch('/api/save-data', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    });
+    
+    if (!response.ok) {
+      throw new Error('Veri kaydedilemedi');
+    }
+    
+    return await response.json();
+  } catch (error) {
+    console.error('Veri kaydetme hatası:', error);
+    throw error;
+  }
+};
+
 export default function AdminPanel() {
   const router = useRouter();
   
@@ -263,49 +300,24 @@ export default function AdminPanel() {
 
   // Save changes to localStorage and create backup if auto-save is enabled
   const saveChanges = async () => {
-    setIsLoading(true);
     try {
       const data = {
-        heroText,
-        pageTitle,
-        copyrightText,
-        aboutText,
         projects,
         skills,
-        contactInfo,
-        profileImage,
-        scrollIndicator,
-        colorPalette,
-        logoText,
-        logoColors,
         workExperience,
-        education
+        education,
+        heroText,
+        aboutText,
+        contactInfo,
+        colorPalette,
+        buttons
       };
       
-      // Save current state to undo stack
-      setUndoStack([...undoStack, data]);
-      setRedoStack([]); // Clear redo stack when new changes are made
-      
-      // Save main data
-      localStorage.setItem('portfolioData', JSON.stringify(data));
-      
-      // Save buttons separately
-      localStorage.setItem('portfolioButtons', JSON.stringify(buttons));
-      
-      setLastSaved(new Date().toLocaleTimeString());
-      
-      if (autoSave) {
-        createBackup();
-      }
-      
-      // Simulate API call
-      await new Promise(resolve => setTimeout(resolve, 1000));
-      
-      alert('Changes saved successfully!');
+      await saveData(data);
+      alert('Değişiklikler başarıyla kaydedildi!');
     } catch (error) {
-      alert('Error saving changes. Please try again.');
-    } finally {
-      setIsLoading(false);
+      alert('Değişiklikler kaydedilirken bir hata oluştu!');
+      console.error('Kaydetme hatası:', error);
     }
   };
 
@@ -344,42 +356,23 @@ export default function AdminPanel() {
 
   // Load data from localStorage on component mount
   useEffect(() => {
-    const savedData = localStorage.getItem('portfolioData');
-    const savedButtons = localStorage.getItem('portfolioButtons');
-    
-    if (savedData) {
-      try {
-        const data = JSON.parse(savedData);
-        setOriginalData(data); // Store original data
-        setHeroText(data.heroText || heroText);
-        setPageTitle(data.pageTitle || pageTitle);
-        setCopyrightText(data.copyrightText || copyrightText);
-        setAboutText(data.aboutText || aboutText);
+    const loadData = async () => {
+      const data = await fetchData();
+      if (data) {
         setProjects(data.projects || []);
         setSkills(data.skills || []);
-        setContactInfo(data.contactInfo || contactInfo);
-        setProfileImage(data.profileImage || profileImage);
-        setScrollIndicator(data.scrollIndicator || scrollIndicator);
-        setColorPalette(data.colorPalette || colorPalette);
-        setLogoText(data.logoText || logoText);
-        setLogoColors(data.logoColors || logoColors);
         setWorkExperience(data.workExperience || []);
         setEducation(data.education || []);
-      } catch (error) {
-        console.error('Error parsing saved data:', error);
+        setHeroText(data.heroText || { name: "", titles: [] });
+        setAboutText(data.aboutText || { paragraph1: "", paragraph2: "" });
+        setContactInfo(data.contactInfo || {});
+        setColorPalette(data.colorPalette || {});
+        setButtons(data.buttons || []);
       }
-    }
-
-    if (savedButtons) {
-      try {
-        const parsedButtons = JSON.parse(savedButtons);
-        setButtons(parsedButtons);
-      } catch (error) {
-        console.error('Error parsing saved buttons:', error);
-        setButtons([]);
-      }
-    }
-  }, [isAuthenticated]);
+    };
+    
+    loadData();
+  }, []);
 
   // Save buttons whenever they change (if authenticated)
   useEffect(() => {

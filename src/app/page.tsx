@@ -66,9 +66,23 @@ const VideoModal = ({ videoUrl, onClose }: { videoUrl: string; onClose: () => vo
   );
 };
 
+// Veri yükleme fonksiyonu
+const fetchData = async () => {
+  try {
+    const response = await fetch('/data.json');
+    if (!response.ok) {
+      throw new Error('Veri yüklenemedi');
+    }
+    return await response.json();
+  } catch (error) {
+    console.error('Veri yükleme hatası:', error);
+    return null;
+  }
+};
+
 export default function Home() {
-  // All useState declarations at the top
   const [data, setData] = useState<any>(null);
+  const [loading, setLoading] = useState(true);
   const [buttons, setButtons] = useState<Button[]>([]);
   const [heroText, setHeroText] = useState({
     name: "Mustafa Erçin",
@@ -133,66 +147,14 @@ export default function Home() {
     FaPlay
   };
 
-  // Load data from localStorage
   useEffect(() => {
-    const savedData = localStorage.getItem('portfolioData');
-    if (savedData) {
-      try {
-        const parsedData = JSON.parse(savedData);
-        setData(parsedData);
-        setHeroText(parsedData.heroText || heroText);
-        setPageTitle(parsedData.pageTitle || pageTitle);
-        setCopyrightText(parsedData.copyrightText || copyrightText);
-        setAboutText(parsedData.aboutText || aboutText);
-        setProjects(parsedData.projects || []);
-        setSkills(parsedData.skills || []);
-        setContactInfo(parsedData.contactInfo || contactInfo);
-        setProfileImage(parsedData.profileImage || profileImage);
-        setScrollIndicator(parsedData.scrollIndicator || scrollIndicator);
-        setColorPalette(parsedData.colorPalette || colorPalette);
-      } catch (error) {
-        console.error('Error parsing saved data:', error);
-        // Varsayılan değerleri kullan
-        setData({
-          heroText,
-          pageTitle,
-          copyrightText,
-          aboutText,
-          projects: [],
-          skills: [],
-          contactInfo,
-          profileImage,
-          scrollIndicator,
-          colorPalette
-        });
-      }
-    } else {
-      // İlk kez çalıştırıldığında varsayılan değerleri kullan
-      setData({
-        heroText,
-        pageTitle,
-        copyrightText,
-        aboutText,
-        projects: [],
-        skills: [],
-        contactInfo,
-        profileImage,
-        scrollIndicator,
-        colorPalette
-      });
-    }
-
-    const savedButtons = localStorage.getItem('portfolioButtons');
-    if (savedButtons) {
-      try {
-        setButtons(JSON.parse(savedButtons));
-      } catch (error) {
-        console.error('Error parsing saved buttons:', error);
-        setButtons([]);
-      }
-    } else {
-      setButtons([]);
-    }
+    const loadData = async () => {
+      const result = await fetchData();
+      setData(result);
+      setLoading(false);
+    };
+    
+    loadData();
   }, []);
 
   // Update CSS variables when color palette changes
@@ -293,8 +255,12 @@ export default function Home() {
     document.title = pageTitle;
   }, [pageTitle]);
 
+  if (loading) {
+    return <div>Yükleniyor...</div>;
+  }
+
   if (!data) {
-    return <div>Loading...</div>;
+    return <div>Veri yüklenemedi</div>;
   }
 
   return (

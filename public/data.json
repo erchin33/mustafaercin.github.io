@@ -1,0 +1,49 @@
+{
+  "heroText": {
+    "name": "Mustafa ERCİN",
+    "titles": ["Game Designer", "Level Designer"]
+  },
+  "aboutText": {
+    "paragraph1": "I graduated with a degree in Game Design, with a strong foundation in game mechanics, user experience, and creative game development. I possess experience in analyzing KPIs and conducting market research to inform game development.",
+    "paragraph2": "As a quick learner and dedicated team player, I am eager to apply my skills to contribute innovative ideas and collaborate within a dynamic team. Committed to continuous growth in the game design field, I am passionate about creating engaging and immersive gaming experiences. While my expertise spans various areas, my primary focus has been in level design, where I have developed a strong ability to craft engaging, balanced, and immersive game levels."
+  },
+  "projects": [],
+  "skills": [],
+  "workExperience": [],
+  "education": [],
+  "contactInfo": {
+    "email": "mustafaercin@gmail.com",
+    "phone": "+905340180861",
+    "linkedin": "https://linkedin.com/in/mustafa-ercin",
+    "github": "https://github.com/erchin33"
+  },
+  "colorPalette": {
+    "primary": "#6366f1",
+    "primaryHover": "#818cf8",
+    "dark": "#0f172a",
+    "light": "#ffffff",
+    "gradientStart": "rgba(15, 23, 42, 0.95)",
+    "gradientEnd": "rgba(99, 102, 241, 0.1)",
+    "cardBg": "rgba(15, 23, 42, 0.7)",
+    "cardBorder": "rgba(255, 255, 255, 0.1)",
+    "textMuted": "rgba(255, 255, 255, 0.7)"
+  },
+  "buttons": [
+    {
+      "id": "1",
+      "name": "GitHub",
+      "url": "https://github.com/mustafaercin",
+      "icon": "FaGithub",
+      "order": 1,
+      "isActive": true
+    },
+    {
+      "id": "2",
+      "name": "LinkedIn",
+      "url": "https://linkedin.com/in/mustafaercin",
+      "icon": "FaLinkedin",
+      "order": 2,
+      "isActive": true
+    }
+  ]
+} 
