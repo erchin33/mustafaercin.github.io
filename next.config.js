@@ -4,7 +4,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: '/personel-website',
+  basePath: '',
   eslint: {
     ignoreDuringBuilds: true,
   },
