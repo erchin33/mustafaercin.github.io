@@ -4,11 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack --hostname localhost --port 3001",
-    "build": "set NEXT_DISABLE_ESLINT_PLUGIN=true && next build",
+    "build": "set NEXT_DISABLE_ESLINT_PLUGIN=true && next build && Xcopy out\\* . /E /I /Y",
     "start": "next start",
     "lint": "next lint",
     "export": "next build && next export",
-    "deploy": "npm run build && touch out/.nojekyll && git add out/ && git commit -m \"Deploy to gh-pages\" && git subtree push --prefix out origin gh-pages"
+    "deploy": "npm run build && git add . && git commit -m \"Deploy to erchin33.github.io\" && git push origin main"
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
