@@ -1,0 +1,239 @@
+{
+  "heroText": {
+    "name": "Mustafa Erçin",
+    "titles": ["Product Specialist", "Level Designer"]
+  },
+  "pageTitle": "Mustafa Erçin - Product Specialist & Level Designer",
+  "copyrightText": "© 2025 Mustafa Erçin. All rights reserved.",
+  "aboutText": {
+    "paragraph1": "I am a passionate and multidisciplinary Game Designer with a background in both creative and technical aspects of development. With a degree in Digital Game Design and hands-on experience in Level Design, QA testing, and user-focused design, I thrive in environments that require both innovation and precision.",
+    "paragraph2": "I have contributed to projects ranging from VR military training simulations to mobile and PC puzzle games, always with a focus on creating meaningful player experiences. My work often bridges the gap between gameplay mechanics, user behavior, and technical feasibility. Whether I am designing levels, improving UX, conducting market research, or guiding product development, I approach each challenge with curiosity and a solution-oriented mindset.\n\nI believe in the power of collaboration and continuous learning, and I'm always excited to turn creative ideas into real, impactful products."
+  },
+  "profileImage": "https://media.licdn.com/dms/image/v2/D4D03AQHaqYnZioUejg/profile-displayphoto-shrink_800_800/B4DZb0vNgjGwAg-/0/1747862739893?e=1753920000&v=beta&t=eoha5VFiokuW0UmMDcoesx9t_CfSNoZPskAVertBLF8",
+  "contactInfo": {
+    "email": "mustafaercin@gmail.com",
+    "phone": "+905434132393",
+    "linkedin": "https://linkedin.com/in/mustafa-ercin",
+    "github": "https://github.com/erchin33"
+  },
+  "logoText": "Portfolio",
+  "logoColors": {
+    "start": "#007bff",
+    "end": "#00ff88"
+  },
+  "skills": [
+    { "id": "1", "name": "Unity", "percentage": 90, "color": "#007bff", "order": 1, "isActive": true },
+    { "id": "2", "name": "C#", "percentage": 85, "color": "#007bff", "order": 2, "isActive": true },
+    { "id": "3", "name": "Trello", "percentage": 90, "color": "#007bff", "order": 3, "isActive": true },
+    { "id": "4", "name": "Miro", "percentage": 85, "color": "#007bff", "order": 4, "isActive": true },
+    { "id": "5", "name": "QA", "percentage": 90, "color": "#007bff", "order": 5, "isActive": true },
+    { "id": "6", "name": "Figma", "percentage": 85, "color": "#007bff", "order": 6, "isActive": true },
+    { "id": "7", "name": "Photoshop", "percentage": 80, "color": "#007bff", "order": 7, "isActive": true },
+    { "id": "8", "name": "Project Management", "percentage": 90, "color": "#007bff", "order": 8, "isActive": true },
+    { "id": "9", "name": "Agile", "percentage": 85, "color": "#007bff", "order": 9, "isActive": true },
+    { "id": "10", "name": "Game Design", "percentage": 95, "color": "#007bff", "order": 10, "isActive": true },
+    { "id": "11", "name": "Level Design", "percentage": 95, "color": "#007bff", "order": 11, "isActive": true }
+  ],
+  "projects": [
+    {
+      "id": "1",
+      "title": "Slide Cubes",
+      "description": "Slide Cubes is a mobile puzzle game developed in portrait mode, where players must guide a round character to a target point within a limited time. With each move, the character advances only one tile in the chosen direction, requiring quick thinking and strategic planning. I was responsible for the core gameplay mechanics, level design, and puzzle progression. In addition to designing the game, I managed a small development team, ensuring smooth collaboration and steady progress. This project highlights my ability to craft engaging gameplay experiences while effectively leading a game development process.",
+      "image": "https://media.licdn.com/dms/image/v2/D4D2DAQEOeY_HbeBfzQ/profile-treasury-image-shrink_8192_8192/B4DZbZMYmfIAAg-/0/1747400624942?e=1750773600&v=beta&t=Qaq6wI0mKj-N00C3u8q2FJOUQJtzP7CwZVRY6kuJKAc",
+      "video": "https://www.youtube.com/embed/ro33kIcsh8g",
+      "tags": ["Project Management", "Unity", "QA", "Figma", "Game Design"],
+      "order": 1,
+      "isActive": true,
+      "isFeatured": true
+    },
+    {
+      "id": "2",
+      "title": "Inter Island",
+      "description": "Inter Island is a PC game where players take on the role of a merchant navigating between islands with diverse climates to trade resources and goods. As the Project Manager, I oversaw the development process from concept to completion, taking responsibility for game design, environment design, level design, and UI design. Each island was crafted to offer a distinct and immersive atmosphere, influencing both gameplay and trade dynamics. I coordinated cross-functional teams, managed resources, and ensured the on-time delivery of polished gameplay systems. The game features a dynamic trading system, strategic resource management, and an intuitive user interface that enhances the player's experience while traveling across richly detailed environments. This project reflects my ability to lead a multidisciplinary team and deliver a cohesive and engaging gameplay experience.",
+      "image": "https://media.licdn.com/dms/image/v2/D4D2DAQGyaJJGMJctdw/profile-treasury-image-shrink_800_800/B4DZd.C0.hGkAY-/0/1750166360722?e=1750773600&v=beta&t=Ufl8CNoSTlT7rBysglMaPdBLQYAG9gSTmsv2h8En2Lk",
+      "video": "https://www.youtube.com/embed/N30n2XWf5JQ",
+      "tags": ["Project Management", "UI", "Unity", "QA", "Figma", "Game Design", "Level Design"],
+      "order": 2,
+      "isActive": true,
+      "isFeatured": true
+    },
+    {
+      "id": "3",
+      "title": "TacticXR",
+      "description": "TacticXR is a virtual reality tactical training simulation developed for military personnel. In this project, I contributed to the design of large-scale training environments and mission-based scenarios, while also implementing localization systems and real-time multi-personnel monitoring panels. I conducted user training sessions to ensure an interactive and effective learning experience tailored to operational needs. Additionally, I managed research and development activities, gathered and integrated customer requirements, and oversaw testing and bug-fixing processes to maintain high performance and reliability. This project reflects my ability to combine technical execution with user-centered design in a complex, real-time VR environment.",
+      "image": "https://www.adtairdefence.com/foto/1733395313-DSC_2280-Enhanced.png",
+      "video": "https://www.youtube.com/embed/nAqCyLrWEAw",
+      "tags": ["Unity", "QA", "Figma", "Simulation", "Level Design", "VR", "UI"],
+      "order": 3,
+      "isActive": true,
+      "isFeatured": true
+    },
+    {
+      "id": "4",
+      "title": "PizzaPit",
+      "description": "PizzaPit is a fast-paced cooking simulation game where players step into the role of a pizza chef, crafting customized pizzas based on incoming customer orders. As players race against time, they must manage ingredients, respond to dynamic requests, and ensure each pizza is prepared and baked to perfection. I was responsible for 3D modeling, level design, and gameplay mechanics. My work focused on building an immersive pizza preparation experience with intuitive and engaging customer interactions, as well as designing levels that balance time management, strategic thinking, and fun. This project highlights my ability to combine creative gameplay design with strong visual and interactive elements to deliver a satisfying user experience.",
+      "image": "https://img.freepik.com/free-psd/3d-rendering-delicious-pizza-slice_23-2149108555.jpg?semt=ais_hybrid&w=740",
+      "demo": "https://drive.google.com/drive/folders/1JgFQpuURDyQhfM7JCYVxfYDkMigEtQuR?usp=drive_link",
+      "tags": ["Unity", "QA", "Level Design", "UI"],
+      "order": 4,
+      "isActive": true,
+      "isFeatured": false
+    },
+    {
+      "id": "5",
+      "title": "Reverbs2Mind",
+      "description": "The game follows a protagonist who awakens from a vivid dream and is drawn into a surreal journey guided by a mysterious voice. Upon following the voice's instructions and interacting with a computer, the character is transported into a digital world where they must locate and dispose of a specific outfit. As the narrative unfolds, players navigate through a series of challenges that blur the line between dreams and reality. I was responsible for the UI/UX design, gameplay development, and level design. My work focused on crafting a seamless and immersive interface, implementing core mechanics, and designing levels that offer both narrative depth and intellectual challenge. This project showcases my ability to blend storytelling with interactive design, creating an engaging experience that evolves as the player progresses.",
+      "image": "https://img.itch.zone/aW1hZ2UvMTg1MTMzMC8xMDg2NzQyOC5wbmc=/original/VwPGYh.png",
+      "demo": "https://erchin.itch.io/reverb2mind",
+      "tags": ["Unity", "Game Design", "Design", "UI"],
+      "order": 5,
+      "isActive": true,
+      "isFeatured": false
+    },
+    {
+      "id": "6",
+      "title": "WTF!? : The Room",
+      "description": "This game offers players a thought-provoking journey filled with complex puzzles and evolving challenges. In each room, players must find a way forward by utilizing a special power—one that they cannot fully control. When approached strategically, this power becomes the key to success. The experience requires a balance of intelligence and strategy, pushing players to think critically and adapt constantly. I was responsible for level design, game mechanics, and UI design. Every aspect of the game was carefully crafted to provide an immersive, mentally engaging experience that rewards thoughtful gameplay and encourages players to develop new problem-solving approaches.",
+      "image": "https://img.itch.zone/aW1hZ2UvMjcxODkzMi8xNjIxMDg3OS5wbmc=/original/UGTLLW.png",
+      "video": "https://www.youtube.com/embed/Oi19WSrIGD4",
+      "demo": "https://emirozger.itch.io/wtf-the-room",
+      "tags": ["Unity", "Game Design", "Design", "UI"],
+      "order": 6,
+      "isActive": true,
+      "isFeatured": false
+    },
+    {
+      "id": "7",
+      "title": "Kitchen Chaos (clone)",
+      "description": "A clone of the fast-paced cooking game Kitchen Chaos, developed to practice time-sensitive task management, player input handling, and kitchen station interactions. I implemented core gameplay systems such as recipe logic, order timers, and UI feedback to simulate an engaging kitchen experience.",
+      "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2275820/ss_872ca7604865c2303adef48a1ef0ea176b12c2a5.1920x1080.jpg?t=1725190944",
+      "video": "https://www.youtube.com/embed/gc5mdfBXcCA",
+      "tags": ["Unity", "Game Design", "Design", "UI", "C#"],
+      "order": 7,
+      "isActive": true,
+      "isFeatured": false
+    },
+    {
+      "id": "8",
+      "title": "ZigZag (clone)",
+      "description": "A clone of the popular endless arcade game ZigZag, created to strengthen my skills in mobile-friendly input systems, procedural level generation, and score tracking. This project allowed me to explore smooth character movement along dynamic paths and responsive gameplay loops.",
+      "image": "https://play-lh.googleusercontent.com/6pyha8P40IH8Yn7ets-yr-sDmze-lif7Lh80ZMffdBojvhAtGTk88zHru3UHeipNhA",
+      "video": "https://www.youtube.com/embed/nGj_PXC3bgw",
+      "tags": ["Unity", "Game Design", "Design", "UI", "C#"],
+      "order": 8,
+      "isActive": true,
+      "isFeatured": false
+    },
+    {
+      "id": "9",
+      "title": "Ship Park Master",
+      "description": "A puzzle game where players draw paths to park ships safely at their correct colored spots without collisions. I designed the gameplay and created levels with increasing difficulty that emphasize strategy and timing.",
+      "image": "https://i.hizliresim.com/opuubqh.png",
+      "video": "https://www.youtube.com/embed/7ps5wZ8ohys",
+      "tags": ["Unity", "Game Design", "Design", "UI", "Level Design"],
+      "order": 9,
+      "isActive": true,
+      "isFeatured": false
+    }
+  ],
+  "workExperience": [
+    {
+      "id": "1",
+      "title": "Unity Developer / Product Specialist",
+      "company": "ADT Aviation and Defense Technologies",
+      "duration": "Sep 2024 – May 2025",
+      "location": "Istanbul",
+      "description": "● Created gamified VR training simulations focusing on UX and user interaction.\n● Designed UI/UX and led localization for multi-language support.\n● Designed and iterated puzzle mechanics using player feedback and analytics.\n● Performed QA testing, resolving bugs for stable, user-ready releases."
+    },
+    {
+      "id": "2",
+      "title": "Co-Founder & Project Manager",
+      "company": "OGEM – Boem Games",
+      "duration": "Feb 2024 – Aug 2024",
+      "location": "Istanbul",
+      "description": "● Led the development of Unity-based hyper-casual and casual mobile game prototypes.\n● Designed and iterated puzzle mechanics with a focus on player engagement and retention.\n● Conducted A/B tests and gameplay tuning to improve LTV and session duration.\n● Managed agile sprints, ensuring milestone deliveries with a small multidisciplinary team."
+    },
+    {
+      "id": "3",
+      "title": "Game Designer Intern",
+      "company": "SkyBlue Games",
+      "duration": "May 2022 - Jan 2023",
+      "location": "Remote",
+      "description": "● Assisted in GDD creation and prototyping for hyper-casual games.\n● Conducted QA testing to improve player engagement and retention."
+    },
+    {
+      "id": "4",
+      "title": "Game Designer Intern",
+      "company": "Istanbul Aydin University",
+      "duration": "",
+      "location": "Istanbul",
+      "description": "Worked on student game projects using Unity, C#, and Figma. Focused on gameplay mechanics, UI mockups, and collaborative development with cross-functional teams."
+    }
+  ],
+  "education": [
+    {
+      "id": "1",
+      "school": "Istanbul Aydin University",
+      "degree": "Bachelor's Degree",
+      "field": "Digital Game Design",
+      "duration": "2020 – 2024",
+      "location": "Istanbul",
+      "description": ""
+    },
+    {
+      "id": "2",
+      "school": "Istanbul University",
+      "degree": "Associate's Degree",
+      "field": "Graphic Design",
+      "duration": "2024 – Present",
+      "location": "Remote",
+      "description": ""
+    }
+  ],
+  "colorPalette": {
+    "primary": "#6366f1",
+    "primaryHover": "#818cf8",
+    "dark": "#0f172a",
+    "light": "#ffffff",
+    "gradientStart": "rgba(15, 23, 42, 0.95)",
+    "gradientEnd": "rgba(99, 102, 241, 0.1)",
+    "cardBg": "rgba(15, 23, 42, 0.7)",
+    "cardBorder": "rgba(255, 255, 255, 0.1)",
+    "textMuted": "rgba(255, 255, 255, 0.7)"
+  },
+  "buttons": [
+    {
+      "id": "1",
+      "name": "GitHub",
+      "url": "https://github.com/erchin33",
+      "icon": "FaGithub",
+      "order": 1,
+      "isActive": true
+    },
+    {
+      "id": "2",
+      "name": "LinkedIn",
+      "url": "https://linkedin.com/in/mustafa-ercin",
+      "icon": "FaLinkedin",
+      "order": 2,
+      "isActive": true
+    },
+    {
+      "id": "3",
+      "name": "Artstation",
+      "url": "https://www.artstation.com/erchin",
+      "icon": "SiArtstation",
+      "order": 3,
+      "isActive": true
+    },
+    {
+      "id": "4",
+      "name": "Drive",
+      "url": "https://drive.google.com/drive/folders/1fYuX47ne7m4R2-AkNs95qU-BDXLaWQaR?usp=drive_link",
+      "icon": "custom",
+      "customIconUrl": "https://ssl.gstatic.com/images/branding/product/1x/drive_2020q4_48dp.png",
+      "order": 4,
+      "isActive": true
+    }
+  ]
+} 
