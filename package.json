@@ -3,12 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack --hostname localhost --port 3001",
-    "build": "set NEXT_DISABLE_ESLINT_PLUGIN=true && next build",
+    "dev": "next dev",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "export": "next build && rmdir /s /q docs && ren out docs",
-    "deploy": "npm run export && powershell -Command \"New-Item -Path docs/.nojekyll -ItemType File -Force\" && git add -f docs && git commit -m \"Deploy to GitHub Pages\" && git push"
+    "export": "next export",
+    "deploy": "npm run build && powershell -Command \"New-Item -Path docs/.nojekyll -ItemType File -Force\" && git add -f docs && git commit -m \"Deploy to GitHub Pages\" && git push"
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
