@@ -66,20 +66,6 @@ const VideoModal = ({ videoUrl, onClose }: { videoUrl: string; onClose: () => vo
   );
 };
 
-// Veri yükleme fonksiyonu
-const fetchData = async () => {
-  try {
-    const response = await fetch('/data.json');
-    if (!response.ok) {
-      throw new Error('Veri yüklenemedi');
-    }
-    return await response.json();
-  } catch (error) {
-    console.error('Veri yükleme hatası:', error);
-    return null;
-  }
-};
-
 export default function Home() {
   const [data, setData] = useState<any>(null);
   const [loading, setLoading] = useState(true);
@@ -147,14 +133,36 @@ export default function Home() {
     FaPlay
   };
 
-  useEffect(() => {
-    const loadData = async () => {
-      const result = await fetchData();
-      setData(result);
+  // Veri yükleme fonksiyonu
+  const fetchData = async () => {
+    try {
+      const response = await fetch('/data.json');
+      if (!response.ok) {
+        throw new Error('Veri yüklenemedi');
+      }
+      const jsonData = await response.json();
+      setData(jsonData);
+      
+      // State'leri güncelle
+      setHeroText(jsonData.heroText || { name: "", titles: [] });
+      setPageTitle(jsonData.pageTitle || "");
+      setCopyrightText(jsonData.copyrightText || "");
+      setAboutText(jsonData.aboutText || { paragraph1: "", paragraph2: "" });
+      setProjects(jsonData.projects || []);
+      setSkills(jsonData.skills || []);
+      setContactInfo(jsonData.contactInfo || {});
+      setProfileImage(jsonData.profileImage || "");
+      setColorPalette(jsonData.colorPalette || {});
+      setButtons(jsonData.buttons || []);
+    } catch (error) {
+      console.error('Veri yükleme hatası:', error);
+    } finally {
       setLoading(false);
-    };
-    
-    loadData();
+    }
+  };
+
+  useEffect(() => {
+    fetchData();
   }, []);
 
   // Update CSS variables when color palette changes
@@ -256,11 +264,23 @@ export default function Home() {
   }, [pageTitle]);
 
   if (loading) {
-    return <div>Yükleniyor...</div>;
+    return (
+      <div className="d-flex justify-content-center align-items-center" style={{ height: "100vh" }}>
+        <div className="spinner-border text-primary" role="status">
+          <span className="visually-hidden">Yükleniyor...</span>
+        </div>
+      </div>
+    );
   }
 
   if (!data) {
-    return <div>Veri yüklenemedi</div>;
+    return (
+      <div className="d-flex justify-content-center align-items-center" style={{ height: "100vh" }}>
+        <div className="alert alert-danger" role="alert">
+          Veriler yüklenemedi. Lütfen sayfayı yenileyin.
+        </div>
+      </div>
+    );
   }
 
   return (
