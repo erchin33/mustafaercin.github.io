@@ -15,18 +15,32 @@ interface WorkExperience {
 export default function WorkExperience() {
   const [experiences, setExperiences] = useState<WorkExperience[]>([
     {
-      company: "Game Studio X",
-      position: "Level Designer",
-      duration: "2022 - Present",
-      description: "Designed and implemented engaging levels for multiple game projects. Collaborated with artists and programmers to deliver high-quality gameplay.",
-      location: "Istanbul, Turkey"
+      company: "ADT Aviation and Defense Technologies",
+      position: "Unity Developer / Product Specialist",
+      duration: "Sep 2024 – May 2025",
+      description: "● Created gamified VR training simulations focusing on UX and user interaction.\n● Designed UI/UX and led localization for multi-language support.\n● Designed and iterated puzzle mechanics using player feedback and analytics.\n● Performed QA testing, resolving bugs for stable, user-ready releases.",
+      location: "Istanbul"
     },
     {
-      company: "Indie Dev Team",
-      position: "Game Designer",
-      duration: "2020 - 2022",
-      description: "Worked on game mechanics, user experience, and prototyping for indie games. Led playtesting sessions and iterated on feedback.",
+      company: "OGEM – Boem Games",
+      position: "Co-Founder & Project Manager",
+      duration: "Feb 2024 – Aug 2024",
+      description: "● Led the development of Unity-based hyper-casual and casual mobile game prototypes.\n● Designed and iterated puzzle mechanics with a focus on player engagement and retention.\n● Conducted A/B tests and gameplay tuning to improve LTV and session duration.\n● Managed agile sprints, ensuring milestone deliveries with a small multidisciplinary team.",
+      location: "Istanbul"
+    },
+    {
+      company: "SkyBlue Games",
+      position: "Game Designer Intern",
+      duration: "May 2022 - Jan 2023",
+      description: "● Assisted in GDD creation and prototyping for hyper-casual games.\n● Conducted QA testing to improve player engagement and retention.",
       location: "Remote"
+    },
+    {
+      company: "Istanbul Aydin University",
+      position: "Game Designer Intern",
+      duration: "",
+      description: "Worked on student game projects using Unity, C#, and Figma. Focused on gameplay mechanics, UI mockups, and collaborative development with cross-functional teams.",
+      location: "Istanbul"
     }
   ]);
 

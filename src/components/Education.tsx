@@ -16,12 +16,20 @@ interface Education {
 export default function Education() {
   const [education, setEducation] = useState<Education[]>([
     {
-      school: "Anadolu University",
-      degree: "Bachelor's",
-      field: "Game Design",
-      duration: "2016 - 2020",
-      location: "Eskişehir, Turkey",
-      description: "Graduated with honors, focusing on game mechanics, level design, and user experience."
+      school: "Istanbul Aydin University",
+      degree: "Bachelor's Degree",
+      field: "Digital Game Design",
+      duration: "2020 – 2024",
+      location: "Istanbul, Turkey",
+      description: ""
+    },
+    {
+      school: "Istanbul University",
+      degree: "Associate's Degree",
+      field: "Graphic Design",
+      duration: "2024 – Present",
+      location: "Remote",
+      description: ""
     }
   ]);
 
