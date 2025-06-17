@@ -1,10 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
+  distDir: 'docs',
   images: {
     unoptimized: true,
   },
-  basePath: '',
+  basePath: '/personel-website',
+  assetPrefix: '/personel-website/',
   eslint: {
     ignoreDuringBuilds: true,
   },

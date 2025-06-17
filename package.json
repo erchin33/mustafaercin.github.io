@@ -7,8 +7,8 @@
     "build": "set NEXT_DISABLE_ESLINT_PLUGIN=true && next build",
     "start": "next start",
     "lint": "next lint",
-    "export": "next build && next export",
-    "deploy": "npm run build && touch out/.nojekyll && git add out/ && git commit -m \"Deploy to gh-pages\" && git subtree push --prefix out origin gh-pages"
+    "export": "next build && rmdir /s /q docs && ren out docs",
+    "deploy": "npm run export && echo. > docs/.nojekyll && git add -f docs && git commit -m \"Deploy to GitHub Pages\" && git push"
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
