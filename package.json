@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "export": "next build && rmdir /s /q docs && ren out docs",
-    "deploy": "npm run export && echo. > docs/.nojekyll && git add -f docs && git commit -m \"Deploy to GitHub Pages\" && git push"
+    "deploy": "npm run export && powershell -Command \"New-Item -Path docs/.nojekyll -ItemType File -Force\" && git add -f docs && git commit -m \"Deploy to GitHub Pages\" && git push"
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
