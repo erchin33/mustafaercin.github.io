@@ -481,8 +481,9 @@ export default function Home() {
               </motion.div>
 
               <motion.div 
-                className="d-flex gap-4 mt-4 justify-content-center"
+                className="d-flex gap-4 mt-4 justify-content-center flex-wrap"
                 variants={containerVariants}
+                style={{ rowGap: '1rem', columnGap: '1rem' }}
               >
                 {buttons
                   .filter(button => button.isActive)
@@ -494,7 +495,7 @@ export default function Home() {
                         key={button.id}
                         variant="outline-light"
                         size="lg"
-                        className="rounded-pill px-4 d-flex align-items-center gap-2"
+                        className="rounded-pill px-4 d-flex align-items-center gap-2 mb-2"
                         onClick={() => window.open(button.url, '_blank')}
                       >
                         {button.icon === 'custom' && button.customIconUrl ? (
