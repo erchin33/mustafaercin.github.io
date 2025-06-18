@@ -105,9 +105,9 @@ export default function Home() {
   ]);
   const [heroText, setHeroText] = useState({
     name: "Mustafa Erçin",
-    titles: ["Product Specialist", "Level Designer"]
+    titles: ["Product Specialist", "Game Designer"]
   });
-  const [pageTitle, setPageTitle] = useState("Mustafa Erçin - Product Specialist & Level Designer");
+  const [pageTitle, setPageTitle] = useState("Mustafa Erçin - Product Specialist & Game Designer");
   const [copyrightText, setCopyrightText] = useState("© 2025 Mustafa Erçin. All rights reserved.");
   const [aboutText, setAboutText] = useState({
     paragraph1: "I am a passionate and multidisciplinary Game Designer with a background in both creative and technical aspects of development. With a degree in Digital Game Design and hands-on experience in Level Design, QA testing, and user-focused design, I thrive in environments that require both innovation and precision.",
@@ -411,7 +411,7 @@ export default function Home() {
     <>
       <Head>
         <title>{pageTitle}</title>
-        <meta name="description" content="Mustafa Erçin - Game & Level Designer Portfolio" />
+        <meta name="description" content="Mustafa Erçin - Game & Game Designer Portfolio" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

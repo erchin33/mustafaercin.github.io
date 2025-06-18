@@ -6,8 +6,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Mustafa Erçin - Product Specialist & Level Designer",
-  description: "Portfolio website of Mustafa Erçin, a Product Specialist & Level Designer",
+  title: "Mustafa Erçin - Product Specialist & Game Designer",
+  description: "Portfolio website of Mustafa Erçin, a Product Specialist & Game Designer",
 };
 
 export default function RootLayout({
