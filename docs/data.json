@@ -14,7 +14,7 @@
     "email": "mustafaercin3334@gmail.com",
     "phone": "+905434132393",
     "linkedin": "https://linkedin.com/in/mustafa-ercin",
-    "github": "https://github.com/erchin33"
+    "github": "https://github.com/mustafa-ercin"
   },
   "logoText": "Portfolio",
   "logoColors": {
@@ -205,7 +205,7 @@
     {
       "id": "1",
       "name": "GitHub",
-      "url": "https://github.com/erchin33",
+      "url": "https://github.com/mustafa-ercin",
       "icon": "FaGithub",
       "order": 1,
       "isActive": true
