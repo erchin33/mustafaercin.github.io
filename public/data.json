@@ -11,10 +11,10 @@
   },
   "profileImage": "https://media.licdn.com/dms/image/v2/D4D03AQHaqYnZioUejg/profile-displayphoto-shrink_800_800/B4DZb0vNgjGwAg-/0/1747862739893?e=1753920000&v=beta&t=eoha5VFiokuW0UmMDcoesx9t_CfSNoZPskAVertBLF8",
   "contactInfo": {
-    "email": "mustafaercin@gmail.com",
+    "email": "mustafaercin3334@gmail.com",
     "phone": "+905434132393",
     "linkedin": "https://linkedin.com/in/mustafa-ercin",
-    "github": "https://github.com/erchin33"
+    "github": "https://github.com/mustafa-ercin"
   },
   "logoText": "Portfolio",
   "logoColors": {
@@ -39,7 +39,7 @@
       "id": "1",
       "title": "Slide Cubes",
       "description": "Slide Cubes is a mobile puzzle game developed in portrait mode, where players must guide a round character to a target point within a limited time. With each move, the character advances only one tile in the chosen direction, requiring quick thinking and strategic planning. I was responsible for the core gameplay mechanics, level design, and puzzle progression. In addition to designing the game, I managed a small development team, ensuring smooth collaboration and steady progress. This project highlights my ability to craft engaging gameplay experiences while effectively leading a game development process.",
-      "image": "https://media.licdn.com/dms/image/v2/D4D2DAQEOeY_HbeBfzQ/profile-treasury-image-shrink_8192_8192/B4DZbZMYmfIAAg-/0/1747400624942?e=1750773600&v=beta&t=Qaq6wI0mKj-N00C3u8q2FJOUQJtzP7CwZVRY6kuJKAc",
+      "image": "https://media.licdn.com/dms/image/v2/D4D2DAQEOeY_HbeBfzQ/profile-treasury-image-shrink_8192_8192/B4DZbZMYmfIAAg-/0/1747400624942?e=1751540400&v=beta&t=5cIavIYLG5seQZPkdBhfboOFuT1Nv1E8rtkBB0rGyKM",
       "video": "https://www.youtube.com/embed/ro33kIcsh8g",
       "tags": ["Project Management", "Unity", "QA", "Figma", "Game Design"],
       "order": 1,
@@ -50,7 +50,7 @@
       "id": "2",
       "title": "Inter Island",
       "description": "Inter Island is a PC game where players take on the role of a merchant navigating between islands with diverse climates to trade resources and goods. As the Project Manager, I oversaw the development process from concept to completion, taking responsibility for game design, environment design, level design, and UI design. Each island was crafted to offer a distinct and immersive atmosphere, influencing both gameplay and trade dynamics. I coordinated cross-functional teams, managed resources, and ensured the on-time delivery of polished gameplay systems. The game features a dynamic trading system, strategic resource management, and an intuitive user interface that enhances the player's experience while traveling across richly detailed environments. This project reflects my ability to lead a multidisciplinary team and deliver a cohesive and engaging gameplay experience.",
-      "image": "https://media.licdn.com/dms/image/v2/D4D2DAQGyaJJGMJctdw/profile-treasury-image-shrink_800_800/B4DZd.C0.hGkAY-/0/1750166360722?e=1750773600&v=beta&t=Ufl8CNoSTlT7rBysglMaPdBLQYAG9gSTmsv2h8En2Lk",
+      "image": "https://media.licdn.com/dms/image/v2/D4D2DAQGyaJJGMJctdw/profile-treasury-image-shrink_800_800/B4DZd.C0.hGkAY-/0/1750166360722?e=1751540400&v=beta&t=coovekF9tWWUhi3SgSbwG5-IBc6g0vmErGFut6R-YzQ",
       "video": "https://www.youtube.com/embed/N30n2XWf5JQ",
       "tags": ["Project Management", "UI", "Unity", "QA", "Figma", "Game Design", "Level Design"],
       "order": 2,
@@ -148,7 +148,7 @@
     {
       "id": "2",
       "title": "Co-Founder & Project Manager",
-      "company": "OGEM – Boem Games",
+      "company": "Boem Games",
       "duration": "Feb 2024 – Aug 2024",
       "location": "Istanbul",
       "description": "● Led the development of Unity-based hyper-casual and casual mobile game prototypes.\n● Designed and iterated puzzle mechanics with a focus on player engagement and retention.\n● Conducted A/B tests and gameplay tuning to improve LTV and session duration.\n● Managed agile sprints, ensuring milestone deliveries with a small multidisciplinary team."
@@ -205,7 +205,7 @@
     {
       "id": "1",
       "name": "GitHub",
-      "url": "https://github.com/erchin33",
+      "url": "https://github.com/mustafa-ercin",
       "icon": "FaGithub",
       "order": 1,
       "isActive": true

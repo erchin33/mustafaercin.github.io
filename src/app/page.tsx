@@ -73,7 +73,7 @@ export default function Home() {
     {
       id: '1',
       name: 'GitHub',
-      url: 'https://github.com/erchin33',
+      url: 'https://github.com/mustafa-ercin',
       icon: 'FaGithub',
       order: 1,
       isActive: true
@@ -267,10 +267,10 @@ export default function Home() {
     }
   ]);
   const [contactInfo, setContactInfo] = useState({
-    email: "mustafaercin@gmail.com",
+    email: "mustafaercin3334@gmail.com",
     phone: "+905434132393",
     linkedin: "https://linkedin.com/in/mustafa-ercin",
-    github: "https://github.com/erchin33"
+    github: "https://github.com/mustafa-ercin"
   });
   const [profileImage, setProfileImage] = useState("https://media.licdn.com/dms/image/v2/D4D03AQHaqYnZioUejg/profile-displayphoto-shrink_800_800/B4DZb0vNgjGwAg-/0/1747862739893?e=1753920000&v=beta&t=eoha5VFiokuW0UmMDcoesx9t_CfSNoZPskAVertBLF8");
   const [scrollIndicator, setScrollIndicator] = useState({

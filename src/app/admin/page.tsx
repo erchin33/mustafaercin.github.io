@@ -196,10 +196,10 @@ export default function AdminPanel() {
 
   // UI states
   const [contactInfo, setContactInfo] = useState({
-    email: "mustafaercin@gmail.com",
+    email: "mustafaercin3334@gmail.com",
     phone: "+905340180861",
     linkedin: "https://linkedin.com/in/mustafa-ercin",
-    github: "https://github.com/erchin33"
+    github: "https://github.com/mustafa-ercin"
   });
   const [profileImage, setProfileImage] = useState("/me.jpeg");
   const [scrollIndicator, setScrollIndicator] = useState({
@@ -260,7 +260,7 @@ export default function AdminPanel() {
     {
       id: '1',
       name: 'GitHub',
-      url: 'https://github.com/mustafaercin',
+      url: 'https://github.com/mustafa-ercin',
       icon: 'FaGithub',
       order: 1,
       isActive: true
@@ -869,7 +869,7 @@ export default function AdminPanel() {
                     type="url"
                     value={contactInfo.github}
                     onChange={(e) => setContactInfo({ ...contactInfo, github: e.target.value })}
-                    placeholder="https://github.com/kullaniciadi"
+                    placeholder="https://github.com/mustafa-ercin"
                   />
                 </Form.Group>
               </Col>
