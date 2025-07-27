@@ -227,7 +227,7 @@ export default function Home() {
       location: "Istanbul"
     },
     {
-      company: "Boem Games",
+      company: "OGEM – Boem Games",
       position: "Co-Founder & Project Manager",
       duration: "Feb 2024 – Aug 2024",
       description: "● Led the development of Unity-based hyper-casual and casual mobile game prototypes. \n● Designed and iterated puzzle mechanics with a focus on player engagement and retention. \n● Conducted A/B tests and gameplay tuning to improve LTV and session duration. \n● Managed agile sprints, ensuring milestone deliveries with a small multidisciplinary team.",
