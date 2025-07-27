@@ -12,16 +12,12 @@ interface WorkExperience {
   location: string;
 }
 
-interface WorkExperienceProps {
-  experiences?: WorkExperience[];
-}
-
-export default function WorkExperience({ experiences }: WorkExperienceProps) {
-  const defaultExperiences: WorkExperience[] = [
+export default function WorkExperience() {
+  const [experiences, setExperiences] = useState<WorkExperience[]>([
     {
       company: "UDO",
       position: "Gamer Design Intern",
-      duration: "Jul 2025 – Present · 1 month",
+      duration: "Jul 2025 ",
       description: "Conducted data-driven research to design a mobile game aligned with market trends and user expectations. Led coordination between art and development teams, ensuring smooth collaboration through structured sprints. Regularly presented design progress to the Lead Game Designer; implemented feedback effectively, and contributed to iterative improvements in the game's core experience.",
       location: "Remote"
     },
@@ -53,11 +49,9 @@ export default function WorkExperience({ experiences }: WorkExperienceProps) {
       description: "Worked on student game projects using Unity, C#, and Figma. Focused on gameplay mechanics, UI mockups, and collaborative development with cross-functional teams.",
       location: "Istanbul"
     }
-  ];
+  ]);
 
-  const expList = experiences || defaultExperiences;
-
-  if (expList.length === 0) return null;
+  if (experiences.length === 0) return null;
 
   return (
     <section id="experience" className="py-5">
@@ -84,7 +78,7 @@ export default function WorkExperience({ experiences }: WorkExperienceProps) {
               }}
             />
 
-            {expList.map((exp, index) => (
+            {experiences.map((exp, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
