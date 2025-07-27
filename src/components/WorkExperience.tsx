@@ -15,6 +15,13 @@ interface WorkExperience {
 export default function WorkExperience() {
   const [experiences, setExperiences] = useState<WorkExperience[]>([
     {
+      company: "UDO",
+      position: "Gamer Design Intern",
+      duration: "Jul 2025 ",
+      description: "Conducted data-driven research to design a mobile game aligned with market trends and user expectations. Led coordination between art and development teams, ensuring smooth collaboration through structured sprints. Regularly presented design progress to the Lead Game Designer; implemented feedback effectively, and contributed to iterative improvements in the game's core experience.",
+      location: "Remote"
+    },
+    {
       company: "ADT Aviation and Defense Technologies",
       position: "Unity Developer / Product Specialist",
       duration: "Sep 2024 – May 2025",
