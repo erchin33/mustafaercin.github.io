@@ -118,7 +118,7 @@ export default function Home() {
       id: "1",
       title: "Slide Cubes",
       description: "Slide Cubes is a mobile puzzle game developed in portrait mode, where players must guide a round character to a target point within a limited time. With each move, the character advances only one tile in the chosen direction, requiring quick thinking and strategic planning. I was responsible for the core gameplay mechanics, level design, and puzzle progression. In addition to designing the game, I managed a small development team, ensuring smooth collaboration and steady progress. This project highlights my ability to craft engaging gameplay experiences while effectively leading a game development process.",
-      image: "https://media.licdn.com/dms/image/v2/D4D2DAQEOeY_HbeBfzQ/profile-treasury-image-shrink_8192_8192/B4DZbZMYmfIAAg-/0/1747400624942?e=1750773600&v=beta&t=Qaq6wI0mKj-N00C3u8q2FJOUQJtzP7CwZVRY6kuJKAc",
+      image: "https://i.hizliresim.com/ftidxj7.png",
       video: "https://www.youtube.com/embed/ro33kIcsh8g",
       tags: ["Project Management", "Unity", "QA", "Figma", "Game Design"],
       github: "",
@@ -128,7 +128,7 @@ export default function Home() {
       id: "2",
       title: "Inter Island",
       description: "Inter Island is a PC game where players take on the role of a merchant navigating between islands with diverse climates to trade resources and goods. As the Project Manager, I oversaw the development process from concept to completion, taking responsibility for game design, environment design, level design, and UI design. Each island was crafted to offer a distinct and immersive atmosphere, influencing both gameplay and trade dynamics. I coordinated cross-functional teams, managed resources, and ensured the on-time delivery of polished gameplay systems. The game features a dynamic trading system, strategic resource management, and an intuitive user interface that enhances the player's experience while traveling across richly detailed environments. This project reflects my ability to lead a multidisciplinary team and deliver a cohesive and engaging gameplay experience.",
-      image: "https://media.licdn.com/dms/image/v2/D4D2DAQGyaJJGMJctdw/profile-treasury-image-shrink_800_800/B4DZd.C0.hGkAY-/0/1750166360722?e=1750773600&v=beta&t=Ufl8CNoSTlT7rBysglMaPdBLQYAG9gSTmsv2h8En2Lk",
+      image: "https://i.hizliresim.com/3m0l0a1.jpg",
       video: "https://www.youtube.com/embed/N30n2XWf5JQ",
       tags: ["Project Management", "UI", "Unity", "QA", "Figma", "Game Design", "Level Design"],
       github: "",
@@ -219,6 +219,13 @@ export default function Home() {
     { name: "Level Design", percentage: 95, color: "#0f172a", order: 11, isActive: true }
   ]);
   const [workExperience, setWorkExperience] = useState([
+    {
+      company: "UDO",
+      position: "Gamer Design Intern",
+      duration: "Jul 2025 ",
+      description: "Conducted data-driven research to design a mobile game aligned with market trends and user expectations. Led coordination between art and development teams, ensuring smooth collaboration through structured sprints. Regularly presented design progress to the Lead Game Designer; implemented feedback effectively, and contributed to iterative improvements in the game's core experience.",
+      location: "Remote"
+    },
     {
       company: "ADT Aviation and Defense Technologies",
       position: "Unity Developer / Product Specialist",
